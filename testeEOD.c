@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+struct byte{
+    int feq;
+};
+
 int main(){
 int i;
 char texto[20], c, texto2[20] = "Hello World!";
@@ -15,7 +19,7 @@ FILE *pont_arq;
             printf("Arquivo criado com sucesso \n");
         }
 
-// Lê bytes do arquivo
+// LÃª bytes do arquivo
     while (c != EOF){
         c = getc(pont_arq);
         printf("%c", c);
